@@ -47,7 +47,7 @@
                     </li>
                     <li style="text-align: justify;">
                         <i class="fas fa-globe"></i>
-                        <a href="https://www.example.com" target="_blank">www.example.com</a>
+                        <a href="https://pitchsideblue.in/" target="_blank">https://pitchsideblue.in/</a>
                     </li>
                     <li class="no_hover">
                         <div class="footer_subheading">
