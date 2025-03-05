@@ -43,11 +43,11 @@
                     </li>
                     <li style="text-align: justify;">
                         <i class="fas fa-phone-alt" style="    rotate: 100deg;"></i>
-                        <a href="tel:+1234567890">+91 99520 47972</a>
+                        <a href="tel:+919952047972">+91 99520 47972</a>
                     </li>
                     <li style="text-align: justify;">
                         <i class="fas fa-globe"></i>
-                        <a href="https://www.example.com" target="_blank">www.example.com</a>
+                        <a href="https://pitchsideblue.in/" target="_blank">https://pitchsideblue.in/</a>
                     </li>
                     <li class="no_hover">
                         <div class="footer_subheading">

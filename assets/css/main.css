@@ -15,7 +15,11 @@ h2,h3,h4,h5,h1,h6{
     padding: 0;
     box-sizing: border-box;
 }
-
+p{
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    line-height: 20px;
+}
 body {
     font-family: 'Lato', sans-serif;
     background: #000;
@@ -912,3 +916,80 @@ footer ul .no_hover:hover{
     }
 }
 /* 150 screen size style */
+
+/* about page style  */
+
+.about_row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_row .left_abt{
+    width: 50%;
+    padding: 20px 20px;
+}
+
+.about_row .left_abt img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.left_abt {
+    position: relative;
+    display: inline-block;
+}
+
+.left_abt::before,
+.left_abt::after {
+    content: "";
+    position: absolute;
+    width: 30px; /* Adjust corner size */
+    height: 30px;
+    background: transparent;
+    border: 4px solid red; /* Adjust color and thickness */
+}
+
+.left_abt::before {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+
+.left_abt::after {
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+}
+
+.about_row .right_abt{
+    width: 50%;
+}
+
+.right_abt{
+    padding: 0px 30px;
+}
+.right_abt h3{
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+.right_abt p{
+    text-align: justify;
+    
+}
+
+.image-slider .item img{
+    border: 3px solid #fff;
+}
+
+.image-slider .item p {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "Adamina", Sans-serif;
+    font-size: 20px;
+    line-height: 59px;
+}
+/* about page end */

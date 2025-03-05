@@ -35,13 +35,13 @@
                     <span class="menu-toggle">&#9776;</span>
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
 
                         <!-- Dropdown Menu -->
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#">Outlets and Menu <i class="fa-solid fa-chevron-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Indian Special</a></li>
+                                <li><a class="dropdown-item" href="indian_special.php">Indian Special</a></li>
                                 <li><a class="dropdown-item" href="#">Special Cocktails</a></li>
                                 <li><a class="dropdown-item" href="#">Bar Bites & Shooters</a></li>
                                 <li><a class="dropdown-item" href="#">Beverages</a></li>
@@ -76,7 +76,7 @@
     </header>
 
 
-    <!-- <script>
+    <script>
     document.addEventListener("DOMContentLoaded", function () {
         let links = document.querySelectorAll(".nav-link");
         let currentUrl = window.location.href; // Get full URL
@@ -88,6 +88,6 @@
         });
     });
 
-</script> -->
+</script>
 
     <!-- header section end -->
