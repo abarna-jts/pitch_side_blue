@@ -43,7 +43,7 @@
                     </li>
                     <li style="text-align: justify;">
                         <i class="fas fa-phone-alt" style="    rotate: 100deg;"></i>
-                        <a href="tel:+1234567890">+91 99520 47972</a>
+                        <a href="tel:+919952047972">+91 99520 47972</a>
                     </li>
                     <li style="text-align: justify;">
                         <i class="fas fa-globe"></i>
