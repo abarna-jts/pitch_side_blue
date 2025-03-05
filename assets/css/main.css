@@ -104,6 +104,11 @@ body {
     position: relative;
 }
 
+.nav-link.active {
+    color: #e30016 !important;
+    font-weight: bold;
+}
+
 .nav-link {
     text-decoration: none;
     font-size: 0.8125rem;
@@ -324,7 +329,7 @@ body {
 .banner-text {
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 35%;
     transform: translate(-50%, -50%);
     color: white;
     font-size: 32px;
@@ -340,7 +345,7 @@ body {
     font-weight: normal;
 }
 .banner-text{
-    font-size: 19px;
+    font-size: 20px;
     line-height: 65px;
     text-align: left;
     font-weight: inherit;
@@ -453,10 +458,10 @@ font-family: "Adamina", Sans-serif;
 font-size: 23px;
 line-height: 59px;
 }
-.sports-slider .item img{
+/* .sports-slider .item img{
     height: 310px;
     width: 200px;
-}
+} */
 .section_btn{
     display: flex;
     align-items: center;
@@ -685,6 +690,11 @@ footer .row {
     margin: 10px;
 }
 
+.footer_class li a{
+    color: #fff;
+    text-decoration: none;
+}
+
 .footer_title_bottom{
     margin: 2.8em 0 0 0;
 }
@@ -806,7 +816,7 @@ footer ul .no_hover:hover{
     display: flex;
     align-items: center;
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: #fff;
 }
 
@@ -826,10 +836,79 @@ footer ul .no_hover:hover{
     color: #e30016;
 }
 
+/* footer style end */
 
+
+/* inner page banner style start */
+/* Banner Container */
+.inner-banner {
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    font-size: 2.4rem;
+    font-weight: normal;
+    position: relative;
+    margin-bottom: 0.7em;
+    line-height: 1.5;
+    font-family: 'Prata', serif;
+    background-image: linear-gradient(176deg, #00000082 37%, #000000 131%);
+}
+
+.inner-banner span{
+    color: #e30016;
+    padding-left: 15px;
+    font-weight: 600;
+}
+
+/* Banner Image */
+.inner-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .inner-banner {
+        height: 200px;
+        font-size: 1.5rem;
+    }
+}
+/* inner page banner style end  */
+
+
+
+/* privacy policy style */
+
+.privacy_policy p{
+    margin-bottom: 15px;
+    text-align: justify;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.privacy_policy a{
+    color: #ff6a6a;
+    font-weight: 600;
+    
+}
+
+
+
+/* 150 screen size style */
 @media (max-width:1399px) and (min-width:1200px){
     .nav-link {
         text-decoration: none;
         font-size: 0.7125rem;
     }
 }
+/* 150 screen size style */
