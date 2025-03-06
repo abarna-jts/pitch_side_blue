@@ -39,7 +39,7 @@
 
     <section class="section_padding privacy_policy">
         <div class="container">
-            <p>Pitchside Blue Hotels welcomes you to its website and looks forward to a meaningful interaction with you.
+            <p>Pitchside Blue welcomes you to its website and looks forward to a meaningful interaction with you.
                 Pitchside Blue respects your right to privacy. Any personal information that you share with us, 
                  like your name, date of birth, address, marital status, telephone number, credit card particulars and the like, 
                  shall be entitled to privacy and kept confidential.</p>

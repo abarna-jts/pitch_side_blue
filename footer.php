@@ -29,7 +29,7 @@
                     <li>Corporate Catering</li>
                     <li>Corporate Event</li>
                     <li><a href="privacy_policy.php">Privacy Policy</a></li>
-                    <li>Blogs</li>
+                    <li><a href="terms_condition.php">Terms & condition</a></li>
                 </ul>
             </div>
             <div class="footer_class">

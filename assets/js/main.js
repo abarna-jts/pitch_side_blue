@@ -94,7 +94,7 @@ let currentIndex = 0;
             responsive: {
                 0: { items: 2 },  /* 2 images on mobile */
                 600: { items: 4 }, /* 4 images on tablets */
-                1000: { items: 5 } /* 8 images on large screens */
+                1000: { items: 4 } /* 8 images on large screens */
             }
         });
     });

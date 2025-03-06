@@ -42,8 +42,8 @@
                             <a class="nav-link" href="#">Outlets and Menu <i class="fa-solid fa-chevron-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="indian_special.php">Indian Special</a></li>
-                                <li><a class="dropdown-item" href="#">Special Cocktails</a></li>
-                                <li><a class="dropdown-item" href="#">Bar Bites & Shooters</a></li>
+                                <li><a class="dropdown-item" href="special_cocktails.php">Special Cocktails</a></li>
+                                <li><a class="dropdown-item" href="bar_shooter.php">Bar Bites & Shooters</a></li>
                                 <li><a class="dropdown-item" href="#">Beverages</a></li>
                             </ul>
                         </li>
@@ -56,7 +56,7 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item"><a class="nav-link" href="#">Experience</a></li>
+                        
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#">Catering <i class="fa-solid fa-chevron-down"></i></a>
                             <ul class="dropdown-menu">
@@ -66,6 +66,7 @@
                         </li>
 
                         <li class="nav-item"><a class="nav-link" href="privacy_policy.php">Privacy Policy</a></li>
+                        <li class="nav-item"><a class="nav-link" href="terms_condition.php">Terms & Condition</a></li>
 
                         <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                     </ul>
