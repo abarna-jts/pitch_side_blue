@@ -105,7 +105,7 @@
                 <div class="item"><img src="assets/img/celebration/celebration_7.png" alt="Menu 8"></div>
             </div>
             <div class="section_btn">
-                <a href="#" class="book-btn">Book a Table</a>
+                <a href="" class="book-btn btnOpenForm2">Book a Table</a>
             </div>
 
         </div>
@@ -132,7 +132,7 @@
                 <div class="item"><img src="assets/img/sports-poster/sport_7.jpg" alt="Menu 8"></div>
             </div>
             <div class="section_btn">
-                <a href="#" class="book-btn">Book a Table</a>
+                <a href=""  class="book-btn btnOpenForm2">Book a Table</a>
             </div>
 
         </div>
@@ -223,7 +223,7 @@
                         </div>
                         <p>Indulge in a feast like never before at Friday Feast! Delicious flavors, great company, and an unforgettable dining experience await you!</p>
                         <div class="offer-btn">
-                            <a href="#" class="book-btn">View More</a>
+                            <a href="private_party.php#friday_feast" class="book-btn">View More</a>
                         </div>
                     </div>
 
@@ -238,7 +238,7 @@
                         </div>
                         <p>Celebrate love like never before with our Valentine’s Offer! Romantic ambiance, delightful flavors, and unforgettable moments await you!</p>
                         <div class="offer-btn">
-                            <a href="#" class="book-btn">View More</a>
+                            <a href="private_party.php#valentine_offer" class="book-btn">View More</a>
                         </div>
                     </div>
 
@@ -253,7 +253,7 @@
                         </div>
                         <p>Shake up your week with Midweek Madness! Exciting deals, delicious bites, and unforgettable vibes await you!</p>
                         <div class="offer-btn">
-                            <a href="#" class="book-btn">View More</a>
+                            <a href="private_party.php#midweek_offer" class="book-btn">View More</a>
                         </div>
                     </div>
 
@@ -270,7 +270,7 @@
                         </div>
                         <p>Elevate networking with Corporate Connect! Seamless meets, great ambiance, and unforgettable moments await you!</p>
                         <div class="offer-btn">
-                            <a href="#" class="book-btn">View More</a>
+                            <a href="corporate_party.php#corporate_connect" class="book-btn">View More</a>
                         </div>
                     </div>
 
@@ -285,7 +285,7 @@
                         </div>
                         <p>Double the delight with our Combo Offer! Great deals, delicious flavors, and unbeatable value await you!</p>
                         <div class="offer-btn">
-                            <a href="#" class="book-btn">View More</a>
+                            <a href="private_party.php#combo_offer" class="book-btn">View More</a>
                         </div>
                     </div>
 
@@ -300,7 +300,7 @@
                         </div>
                         <p>Unlock exclusive deals with Corporate Offers! Premium dining, seamless events, and exceptional value await you!</p>
                         <div class="offer-btn">
-                            <a href="#" class="book-btn">View More</a>
+                            <a href="corporate_party.php#corporate_offer" class="book-btn">View More</a>
                         </div>
                     </div>
 
@@ -313,7 +313,122 @@
     <!-- offer section end -->
 
 
+    <div class="form-popup2-bg">
+        <div class="form-container">
+            <button id="btnCloseForm" class="close-button">X</button>
+            <h1>Book a Table</h1>
+            <form action="book_table_mail.php" method="post">
+                <div class="form-group">
+                    <label for="">Name</label>
+                    <input type="text" class="form-control" name="name" required/>
+                </div>
+                
+                <div class="form-group">
+                    <label for="">E-Mail</label>
+                    <input class="form-control" type="text" name="email" required/>
+                </div>
+                <div class="form-group">
+                    <label for="">Phone</label>
+                    <input class="form-control" type="text" name="phone" required/>
+                </div>
+                <div class="form-group">
+                    <label for="">Date</label>
+                    <input class="form-control" type="date" name="date" required/>
+                </div>
+                <div class="form-group">
+                    <label for="">Reservation On</label>
+                    <a href="https://www.zomato.com/chennai/pitchside-blue-1-royapettah/book"><img src="assets/img/zomato.png" alt=""></a>
+                    <a href="https://www.swiggy.com/restaurants/pitchside-blue-bar-royapettah-annanagar-chennai-844672/dineout?is_retargeting=true&media_source=GoogleReserve&utm_campaign=GoogleMap&utm_source=GoogleReserve"><img src="assets/img/swiggy.png" alt=""></a>
+                    <a href="https://www.eazydiner.com/chennai/pitchside-blue-royapettah-chennai-694343"><img src="assets/img/eazydiner.png" alt=""></a>
+                </div>
+                <button class="btn-submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- popup style start -->
+
+    <style>
+
+        .form-popup2-bg {
+        position:absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        }
+        .form-popup2-bg {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(94 110 141 / 0%);
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+        -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+        transition: opacity 0.3s 0s, visibility 0s 0.3s;
+        overflow-y: auto;
+        z-index: 10000;
+        }
+        .form-popup2-bg.is-visible {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+        -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+        transition: opacity 0.3s 0s, visibility 0s 0s;
+        }
+        
+
+        .form-popup2-bg:before{
+            content:'';
+            background-color: #fff;
+        opacity: .25;
+        position:absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        }
+    </style>
+
+
 </body>
+
+
+<script>
+        function closeForm() {
+  $('.form-popup2-bg').removeClass('is-visible');
+}
+
+$(document).ready(function($) {
+  
+  /* Contact Form Interactions */
+  $('#btnOpenForm2').on('click', function(event) {
+    event.preventDefault();
+
+    $('.form-popup2-bg').addClass('is-visible');
+  });
+  
+    //close popup when clicking x or off popup
+  $('.form-popup2-bg').on('click', function(event) {
+    if ($(event.target).is('.form-popup2-bg') || $(event.target).is('#btnCloseForm')) {
+      event.preventDefault();
+      $(this).removeClass('is-visible');
+    }
+  });
+  
+  
+  
+  });
+
+    </script>
 
 <?php include("footer.php"); ?>
 
@@ -351,6 +466,28 @@
   });
 
   
+</script>
+
+<script>
+    function closeForm() {
+        $('.form-popup2-bg').removeClass('is-visible');
+    }
+
+    $(document).ready(function() {
+        // Open form when clicking any button with class btnOpenForm2
+        $('.btnOpenForm2').on('click', function(event) {
+            event.preventDefault();
+            $('.form-popup2-bg').addClass('is-visible');
+        });
+
+        // Close form when clicking outside or clicking close button
+        $('.form-popup2-bg').on('click', function(event) {
+            if ($(event.target).is('.form-popup2-bg') || $(event.target).is('#btnCloseForm')) {
+                event.preventDefault();
+                $(this).removeClass('is-visible');
+            }
+        });
+    });
 </script>
 
 </html>

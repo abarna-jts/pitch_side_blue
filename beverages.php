@@ -2,7 +2,7 @@
 
 <style>
     .menu-container {
-        width: 90%;
+        width: 100%;
         margin: auto;
         text-align: center;
     }
@@ -123,6 +123,7 @@
         justify-content: space-between;
         font-size: 18px;
         margin: 0 0 5px;
+        text-align: start;
     }
 
     .menu-item .price {
@@ -158,33 +159,130 @@
     <div class="container">
         <div class="menu-container">
             <div class="tabs">
-                <div class="tab active" onclick="showTab('vodka')">Special For Vodka</div>
-                <div class="tab" onclick="showTab('rum')">Special For Rum</div>
-                <div class="tab" onclick="showTab('gin')">Special For Gin</div>
-                <div class="tab" onclick="showTab('tequila')">Special for Tequila</div>
-                <div class="tab" onclick="showTab('whisky')">Special for Whisky/Key</div>
-                <div class="tab" onclick="showTab('brandy')">Special for Brandy</div>
+                <div class="tab active" onclick="showTab('beer')">BEER</div>
+                <div class="tab" onclick="showTab('whisky')">WHISKY</div>
+                <div class="tab" onclick="showTab('premium')">PREMIUM</div>
+                <div class="tab" onclick="showTab('single_malt')">SINGLE MALT</div>
+                <div class="tab" onclick="showTab('rum')">RUM</div>
+                <div class="tab" onclick="showTab('gin')">GIN</div>
+                <div class="tab" onclick="showTab('vodka')">VODKA</div>
+                <div class="tab" onclick="showTab('brandy')">BRANDY</div>
             </div>
-            <div class="tab-content active" id="vodka">
+            <div class="tab-content active" id="beer">
                 <div class="menu-container">
                     <div class="menu-items">
                         <ul class="menu-list">
                             <li class="menu-item">
-                                <h4>ACROSS THE LINE <span class="price"></span></h4>
-                                <p>Homemade infused chili vodka, fresh lime and sweet mix with splash of cranberry</p>
+                                <h4>KING FISHER PINT <span class="price"></span></h4>
                             </li>
                             <li class="menu-item">
-                                <h4>ARM BALL <span class="price"></span></h4>
-                                <p>Vodka, blueberry, bar mix and lemonade</p>
+                                <h4>BRITISH PINT <span class="price"></span></h4>
                             </li>
                             <li class="menu-item">
-                                <h4>THE ASHES<span class="price"></span></h4>
-                                <p>Assorted melon balls, premium vodka, apple juice and fresh sweet & sour</p>
+                                <h4>IMPORTED330ML<span class="price"></span></h4>
                             </li>
                         </ul>
                     </div>
                     <div class="menu-image">
-                        <img src="assets/img/menus/vodka.png" alt="Breakfast Image">
+                        <img src="assets/img/menus/beer.png" alt="Breakfast Image">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="whisky">
+                <div class="menu-container" style="width: 78%;">
+                    <div class="menu-items">
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <h4>SIGNATURE/ROYAL CHALLENGE<span class="price"></span></h4>
+                            </li>
+                            <li class="menu-item">
+                                <h4 style="text-align: start;">ANTIQUITY<span class="price"></span></h4>
+                            </li>
+                            <li class="menu-item">
+                                <h4>VAT 69/ BLACK & WHITE<span class="price"></span></h4>
+                            </li>
+                            <li class="menu-item">
+                                <h4>J & B RARE<span class="price"></span></h4>
+                            </li>
+                            <li class="menu-item">
+                                <h4>RED LABEL<span class="price"></span></h4>
+                            </li>
+                            <li class="menu-item">
+                                <h4>GRANTS<span class="price"></span></h4>
+                            </li>
+                            <li class="menu-item">
+                                <h4>TEACHER'S HIGHLAND CREAM<span class="price"></span></h4>
+                            </li>
+                            <li class="menu-item">
+                                <h4>JIM BEAM<span class="price"></span></h4>
+                            </li>
+
+                            <li class="menu-item">
+                                <h4>100 PIPERS<span class="price"></span></h4>
+                            </li>
+                            <li class="menu-item">
+                                <h4>BALLENTINES<span class="price"></span></h4>
+                            </li>
+                            <li class="menu-item">
+                                <h4>JAMESON<span class="price"></span></h4>
+                            </li>
+
+                            
+                        </ul>
+                    </div>
+                    <div class="menu-image">
+                        <img src="assets/img/menus/premium.png" alt="Breakfast Image">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="premium">
+                <div class="menu-container">
+                    <div class="menu-items">
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <h4>CHIVAS REGAL<span class="price"></span></h4>
+                            </li>
+                            <li class="menu-item">
+                                <h4 style="text-align: start;">BLACK LABEL<span class="price"></span></h4>
+                            </li>
+                            <li class="menu-item">
+                                <h4>DOUBLE BLACK<span class="price"></span></h4>
+                            </li>
+                            <li class="menu-item">
+                                <h4>JACK DAIELS/HONEY<span class="price"></span></h4>
+                            </li>
+                            <li class="menu-item">
+                                <h4>MONKEY SHOULDER<span class="price"></span></h4>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="menu-image">
+                        <img src="assets/img/menus/whisky.png" alt="Breakfast Image">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="single_malt">
+                <div class="menu-container">
+                    <div class="menu-items">
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <h4>GLENLIVET<span class="price"></span></h4>
+                            </li>
+                            <li class="menu-item">
+                                <h4 style="text-align: start;">GLENFIDDICH<span class="price"></span></h4>
+                            </li>
+                            <li class="menu-item">
+                                <h4>TALISKAR<span class="price"></span></h4>
+                            </li>
+                            <li class="menu-item">
+                                <h4>LAPHROAIG<span class="price"></span></h4>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="menu-image">
+                        <img src="assets/img/menus/single_malt.png" alt="Breakfast Image">
                     </div>
                 </div>
             </div>
@@ -193,18 +291,15 @@
                     <div class="menu-items">
                         <ul class="menu-list">
                             <li class="menu-item">
-                                <h4>ATTACKING SHOTS<span class="price"></span></h4>
-                                <p>Rum, fruit jujubs in orange cups, pineapple juice and coconut syrup.</p>
+                                <h4>OLD MONK<span class="price"></span></h4>
                             </li>
                             <li class="menu-item">
-                                <h4 style="text-align: start;">CUBAN SHAKE<span class="price"></span></h4>
-                                <p>White rum, ice cream, banana syrup, cinnamon syrup, honey and peanut butter</p>
+                                <h4>BACARDI<span class="price"></span></h4>
                             </li>
                             <li class="menu-item">
-                                <h4>NOTHING BUT<span class="price"></span></h4>
-                                <p>White rum, peach syrup, orange juice, grenadine topped with dark rum.</p>
+                                <h4>HAVANA CLUB<span class="price"></span></h4>
                             </li>
-                            
+
                         </ul>
                     </div>
                     <div class="menu-image">
@@ -217,18 +312,21 @@
                     <div class="menu-items">
                         <ul class="menu-list">
                             <li class="menu-item">
-                                <h4>SACHIN'S STRAIGHT DRIVE<span class="price"></span></h4>
-                                <p>Gin, fresh strawberry, black grapes and pomegranate sweet and sour Angostura bitter, triple sec and top up with tonic water</p>
+                                <h4 style="text-align: start;">HICHKI<span class="price"></span></h4>
                             </li>
                             <li class="menu-item">
-                                <h4 style="text-align: start;">THALA SHOT<span class="price"></span></h4>
-                                <p>Gin, Jalapeno juice, sweet and sour mix, salt and mango juice</p>
+                                <h4 style="text-align: start;">GORDENS<span class="price"></span></h4>
                             </li>
                             <li class="menu-item">
-                                <h4>ROYAPETTAH GROUND<span class="price"></span></h4>
-                                <p>Gin, Tequila, blueberry, strawberry, black berry and Top up with lemonade</p>
+                                <h4 style="text-align: start;">BOMBAY SAPHIRE<span class="price"></span></h4>
                             </li>
-                            
+                            <li class="menu-item">
+                                <h4 style="text-align: start;">BEEFEATER<span class="price"></span></h4>
+                            </li>
+                            <li class="menu-item">
+                                <h4 style="text-align: start;">TANQUIRY<span class="price"></span></h4>
+                            </li>
+                           
                         </ul>
                     </div>
                     <div class="menu-image">
@@ -236,55 +334,38 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-content" id="tequila">
+            <div class="tab-content" id="vodka">
                 <div class="menu-container">
                     <div class="menu-items">
                         <ul class="menu-list">
                             <li class="menu-item">
-                                <h4>MALINGA<span class="price"></span></h4>
-                                <p>Infused green mango Tequila, triple sec, and sweet and sour mix</p>
+                                <h4 style="text-align: start;">ERISTOFF<span class="price"></span></h4>
                             </li>
                             <li class="menu-item">
-                                <h4 style="text-align: start;">PENALTY SHOT<span class="price"></span></h4>
-                                <p>Tequila, chilly vodka, orange vodka, chocolate sauce and cream</p>
+                                <h4 style="text-align: start;">SMIRNOFF<span class="price"></span></h4>
                             </li>
                             <li class="menu-item">
-                                <h4>TIGER KA HAKUM<span class="price"></span></h4>
-                                <p>Tequila, guava juice, Peri peri powder, salt, sweet and sour, cucumber syrup</p>
+                                <h4 style="text-align: start;">STOLICHNAYA<span class="price"></span></h4>
                             </li>
                             <li class="menu-item">
-                                <h4>CHICKEN WINGS BBQ/ POMMEGRANATE<span class="price"></span></h4>
-                                <p>BBQ/ Pomegranate flavored wings sauteed pepper, flakes and oregano.</p>
+                                <h4 style="text-align: start;">ABSOLUTE BLUE/FLAVORS<span class="price"></span></h4>
                             </li>
-
+                            <li class="menu-item">
+                                <h4 style="text-align: start;">SKYY<span class="price"></span></h4>
+                            </li>
+                            <li class="menu-item">
+                                <h4 style="text-align: start;">KETTLE ONE<span class="price"></span></h4>
+                            </li>
+                            <li class="menu-item">
+                                <h4 style="text-align: start;">BELVEDRE<span class="price"></span></h4>
+                            </li>
+                            <li class="menu-item">
+                                <h4 style="text-align: start;">GREY GOOSE<span class="price"></span></h4>
+                            </li>
                         </ul>
                     </div>
                     <div class="menu-image">
-                        <img src="assets/img/menus/tequila.png" alt="Breakfast Image">
-                    </div>
-                </div>
-            </div>
-            <div class="tab-content" id="whisky">
-                <div class="menu-container">
-                    <div class="menu-items">
-                        <ul class="menu-list">
-                            <li class="menu-item">
-                                <h4>T20<span class="price"></span></h4>
-                                <p>Bourbon infused Peanuts, Jaggery syrup, lemon twist served on the rocks</p>
-                            </li>
-                            <li class="menu-item">
-                                <h4>COVER DRIVE<span class="price"></span></h4>
-                                <p>Bourbon Whiskey, full cream milk, boost, vanilla ice cream and dusting with milo.</p>
-                            </li>
-                            <li class="menu-item">
-                                <h4>GREEN PITCH<span class="price"></span></h4>
-                                <p>Whisky, banana syrup, paan syrup and sweet and sour mix</p>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <div class="menu-image">
-                        <img src="assets/img/menus/whisky.png" alt="Breakfast Image">
+                        <img src="assets/img/menus/vodka_beverage.png" alt="Breakfast Image">
                     </div>
                 </div>
             </div>
@@ -293,29 +374,27 @@
                     <div class="menu-items">
                         <ul class="menu-list">
                             <li class="menu-item">
-                                <h4 style="text-align: start;">MESSI<span class="price"></span></h4>
-                                <p>Brandy, chocolate syrup, homemade orange bitter, fresh cream, simple syrup, with crushed ice</p>
+                                <h4 style="text-align: start;">BRITISH EMPIRE<span class="price"></span></h4>
                             </li>
                             <li class="menu-item">
-                                <h4 style="text-align: start;">WAQAR YOUNIS-FIRE BALL<span class="price"></span></h4>
-                                <p>Brandy cinnamon syrup, sweet and sour mix, Rose Mary and splash of angostura bitter mix up with the flaming copper glass</p>
+                                <h4 style="text-align: start;">MORPHEUS RED/BLUE<span class="price"></span></h4>
                             </li>
                             <li class="menu-item">
-                                <h4 style="text-align: start;">MEXICAN SANGRIA<span class="price"></span></h4>
+                                <h4 style="text-align: start;">NAPOLIAN FRENCH<span class="price"></span></h4>
                             </li>
                             <li class="menu-item">
-                                <h4 style="text-align: start;">RUSSIAN SANGRIA<span class="price"></span></h4>
+                                <h4 style="text-align: start;">ST. REMY<span class="price"></span></h4>
                             </li>
                             <li class="menu-item">
-                                <h4 style="text-align: start;">FRENCH SANGRIA<span class="price"></span></h4>
+                                <h4 style="text-align: start;">REMY MARTIN VS<span class="price"></span></h4>
                             </li>
                             <li class="menu-item">
-                                <h4 style="text-align: start;">SCOTTICH SANGRIA<span class="price"></span></h4>
+                                <h4 style="text-align: start;">MARTEL VSOP<span class="price"></span></h4>
                             </li>
                         </ul>
                     </div>
                     <div class="menu-image">
-                        <img src="assets/img/menus/brandy.jpg" alt="Breakfast Image">
+                        <img src="assets/img/menus/brandy_beverage.png" alt="Breakfast Image">
                     </div>
                 </div>
             </div>

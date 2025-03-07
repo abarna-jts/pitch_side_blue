@@ -23,11 +23,10 @@
                     <h3>Quick Links</h3>
                 </div>
                 <ul>
-                    <li>Book a Party</li>
-                    <li>Reserve a Table</li>
-                    <li>Private Catering</li>
-                    <li>Corporate Catering</li>
-                    <li>Corporate Event</li>
+                    <li><a href="" class="btnOpenForm">Book a Party</a></li>
+                    <li><a href="indian_special.php">Outlets & Menus</a></li>
+                    <li><a href="private_party.php">Private Event</a></li>
+                    <li><a href="corporate_party.php">Corporate Event</a></li>
                     <li><a href="privacy_policy.php">Privacy Policy</a></li>
                     <li><a href="terms_condition.php">Terms & condition</a></li>
                 </ul>
@@ -42,7 +41,7 @@
                         <a href="https://maps.app.goo.gl/h6ZAtgYn14hiXhKC8">2nd Floor, No.37, Whites Rd, above Karur Vysya Bank, next to Sathiyam Theater Car Parking, Peters Colony, Royapettah, Chennai, Tamil Nadu 600014</a>
                     </li>
                     <li style="text-align: justify;">
-                        <i class="fas fa-phone-alt" style="    rotate: 100deg;"></i>
+                        <i class="fas fa-phone"></i>
                         <a href="tel:+919952047972">+91 99520 47972</a>
                     </li>
                     <li style="text-align: justify;">
@@ -70,4 +69,27 @@
 
     
 </footer>
+
+
+<script>
+    function closeForm() {
+        $('.form-popup-bg').removeClass('is-visible');
+    }
+
+    $(document).ready(function() {
+        // Open form when clicking any button with class btnOpenForm2
+        $('.btnOpenForm').on('click', function(event) {
+            event.preventDefault();
+            $('.form-popup-bg').addClass('is-visible');
+        });
+
+        // Close form when clicking outside or clicking close button
+        $('.form-popup-bg').on('click', function(event) {
+            if ($(event.target).is('.form-popup2-bg') || $(event.target).is('#btnCloseForm')) {
+                event.preventDefault();
+                $(this).removeClass('is-visible');
+            }
+        });
+    });
+</script>
 

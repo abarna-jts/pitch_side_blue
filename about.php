@@ -47,7 +47,7 @@
                         </div>
                         <p>Indulge in a feast like never before at Friday Feast! Delicious flavors, great company, and an unforgettable dining experience await you!</p>
                         <div class="offer-btn">
-                            <a href="#" class="book-btn">View More</a>
+                            <a href="private_party.php#friday_feast" class="book-btn">View More</a>
                         </div>
                     </div>
 
@@ -62,7 +62,7 @@
                         </div>
                         <p>Celebrate love like never before with our Valentine’s Offer! Romantic ambiance, delightful flavors, and unforgettable moments await you!</p>
                         <div class="offer-btn">
-                            <a href="#" class="book-btn">View More</a>
+                            <a href="private_party.php#valentine_offer" class="book-btn">View More</a>
                         </div>
                     </div>
 
@@ -77,7 +77,7 @@
                         </div>
                         <p>Shake up your week with Midweek Madness! Exciting deals, delicious bites, and unforgettable vibes await you!</p>
                         <div class="offer-btn">
-                            <a href="#" class="book-btn">View More</a>
+                            <a href="private_party.php#midweek_offer" class="book-btn">View More</a>
                         </div>
                     </div>
 
@@ -94,7 +94,7 @@
                         </div>
                         <p>Elevate networking with Corporate Connect! Seamless meets, great ambiance, and unforgettable moments await you!</p>
                         <div class="offer-btn">
-                            <a href="#" class="book-btn">View More</a>
+                            <a href="corporate_party.php#corporate_connect" class="book-btn">View More</a>
                         </div>
                     </div>
 
@@ -109,7 +109,7 @@
                         </div>
                         <p>Double the delight with our Combo Offer! Great deals, delicious flavors, and unbeatable value await you!</p>
                         <div class="offer-btn">
-                            <a href="#" class="book-btn">View More</a>
+                            <a href="private_party.php#combo_offer" class="book-btn">View More</a>
                         </div>
                     </div>
 
@@ -124,7 +124,7 @@
                         </div>
                         <p>Unlock exclusive deals with Corporate Offers! Premium dining, seamless events, and exceptional value await you!</p>
                         <div class="offer-btn">
-                            <a href="#" class="book-btn">View More</a>
+                            <a href="corporate_party.php#corporate_offer" class="book-btn">View More</a>
                         </div>
                     </div>
 
