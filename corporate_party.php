@@ -112,6 +112,49 @@
     .text-content {
         padding: 15px;
     }
+    .text-content h2 {
+        font-size: 20px;
+    }
+    .package_title::after {
+        content: "";
+        display: block;
+        width: 57%;
+        height: 2px;
+        background-color: #e30016;
+        position: absolute;
+        left: 23%;
+        bottom: -5px;
+    }
+    .text-content p {
+        text-align: justify;
+        font-size: 14px;
+        color: #fff;
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+    .text-content p span {
+        font-size: 16px;
+    }
+    .features li {
+        font-size: 14px;
+        text-align: start;
+        margin-bottom: 10px;
+    }
+    .features li::before {
+        content: "✦";
+        color: #e30016;
+        font-size: 16px;
+        position: absolute;
+        left: 0;
+        top: -2px;
+    }
+    .content-wrapper {
+        
+        margin: 20px 0px 30px 0px;
+    }
+    .inner-banner{
+        font-size: 1.8rem !important;
+    }
 }
 
 </style>

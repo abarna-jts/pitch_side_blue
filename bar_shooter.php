@@ -147,6 +147,34 @@
         width: 100%;
         border-radius: 8px;
     }
+
+    @media(max-width:768px){
+        .tabs {
+        display: block;
+        }
+        .tab {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .tab-content {
+            padding: 0px;
+        }
+        .menu-item {
+            padding: 10px 0px;
+        }
+        .menu-container {
+            display: block;
+            padding: 10px;
+        }
+        .menu_img{
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+        }
+        .menu-item h4 {
+            font-size: 16px;
+        }
+    }
 </style>
 
 <div class="inner-banner">
@@ -167,7 +195,7 @@
                 <div class="tab" onclick="showTab('pasta')">Pasta</div>
             </div>
             <div class="tab-content active" id="bar_bites">
-                <div class="menu-container">
+                <div class="menu_img menu-container">
                     <div class="menu-items">
                         <ul class="menu-list">
                             <li class="menu-item">
@@ -206,7 +234,7 @@
                 </div>
             </div>
             <div class="tab-content" id="shooters">
-                <div class="menu-container">
+                <div class="menu_img menu-container">
                     <div class="menu-items">
                         <ul class="menu-list">
                             <li class="menu-item">
@@ -234,7 +262,7 @@
                 </div>
             </div>
             <div class="tab-content" id="mocktail">
-                <div class="menu-container">
+                <div class="menu_img menu-container">
                     <div class="menu-items">
                         <ul class="menu-list">
                             <li class="menu-item">
@@ -266,7 +294,7 @@
                 </div>
             </div>
             <div class="tab-content" id="soft_beverages">
-                <div class="menu-container">
+                <div class="menu_img menu-container">
                     <div class="menu-items">
                         <ul class="menu-list">
                             <li class="menu-item">
@@ -298,7 +326,7 @@
                 </div>
             </div>
             <div class="tab-content" id="dessert">
-                <div class="menu-container">
+                <div class="menu_img menu-container">
                     <div class="menu-items">
                         <ul class="menu-list">
                             <li class="menu-item">
@@ -316,7 +344,7 @@
                 </div>
             </div>
             <div class="tab-content" id="pasta">
-                <div class="menu-container">
+                <div class="menu_img menu-container">
                     <div class="menu-items">
                         <ul class="menu-list">
                             <li class="menu-item">

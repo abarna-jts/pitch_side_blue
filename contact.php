@@ -65,6 +65,10 @@
     margin-bottom: 5px;
 }
 
+.contact-info-content a{
+  text-decoration: none;
+}
+
 .contact-info-content p {
   color: #FFF;
   font-size: 1em;
@@ -159,6 +163,18 @@
     width: 100%;
   }
 }
+
+@media (max-width:768px){
+  .home_icon{
+    width: 250px !important;
+  }
+  .contact-form h2 {
+    font-weight: normal;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+}
 </style>
 
 <div class="inner-banner">
@@ -176,13 +192,13 @@
         <div class="contact-row">
             <div class="contact-info">
                 <div class="contact-info-item">
-                    <div class="contact-info-icon" style="width: 140px;">
+                    <div class="contact-info-icon home_icon" style="width: 140px;">
                         <i class="fas fa-home"></i>
                     </div>
                     <div class="contact-info-content">
                         <h4>Address</h4>
-                        <p>2nd Floor, No.37, Whites Rd, above Karur Vysya Bank, next to Sathiyam 
-                            Theater Car Parking, Peters Colony, Royapettah, Chennai, Tamil Nadu 600014</p>
+                        <a href="https://maps.app.goo.gl/h6ZAtgYn14hiXhKC8"><p>2nd Floor, No.37, Whites Rd, above Karur Vysya Bank, next to Sathiyam 
+                        Theater Car Parking, Peters Colony, Royapettah, Chennai, Tamil Nadu 600014</p></a>
                     </div>
                 </div>
 
@@ -192,7 +208,7 @@
                     </div>
                     <div class="contact-info-content">
                         <h4>Phone</h4>
-                        <p>+91 99520 47972</p>
+                        <a href="tel:+919952047972"><p>+91 99520 47972</p></a>
                     </div>
                 </div>
 
@@ -202,7 +218,7 @@
                     </div>
                     <div class="contact-info-content">
                         <h4>Website</h4>
-                        <p>https://pitchsideblue.in/</p>
+                        <a href="https://pitchsideblue.in/"><p>https://pitchsideblue.in/</p></a>
                     </div>
                 </div>
             </div>

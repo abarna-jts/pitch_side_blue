@@ -25,7 +25,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-5">
-                        <h3 class="banner-heading">Hosts of Reasons to Party Every Day </h3>
+                        <h3 class="banner-heading">Experience the Ultimate Sports Bar & Dining</h3>
                         <p class="banner_text">
                             <span>E</span>at
                             <span>D</span>rink
@@ -33,8 +33,8 @@
                             <span>E</span>njoy
                         </p>
                         <div class="banner-btn">
-                            <a href="#" class="book-btn">View Experience</a>
-                            <a href="#" class="book-btn">Contact us</a>
+                            <a href="about.php" class="book-btn">View Experience</a>
+                            <a href="contact.php" class="book-btn">Contact us</a>
                         </div>
                     </div>
                 </div>
@@ -450,10 +450,10 @@ $(document).ready(function($) {
         slidesPerView: 1,
         loop: true,
         grabCursor: true,
-        autoplay: {
-            delay: 5000, // Auto slide every 3 seconds
-            disableOnInteraction: false,
-        },
+        // autoplay: {
+        //     delay: 5000, // Auto slide every 3 seconds
+        //     disableOnInteraction: false,
+        // },
         pagination: {
             el: ".swiper-pagination",
             clickable: true,

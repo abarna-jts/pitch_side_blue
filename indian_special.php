@@ -123,6 +123,7 @@
         justify-content: space-between;
         font-size: 18px;
         margin: 0 0 5px;
+        text-align: start;
     }
 
     .menu-item .price {
@@ -146,6 +147,34 @@
         width: 100%;
         border-radius: 8px;
     }
+
+    @media(max-width:768px){
+        .tabs {
+        display: block;
+        }
+        .tab {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .tab-content {
+            padding: 0px;
+        }
+        .menu-item {
+            padding: 10px 0px;
+        }
+        .menu-container {
+            display: block;
+            padding: 10px;
+        }
+        .menu_img{
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+        }
+        .menu-item h4 {
+            font-size: 16px;
+        }
+    }
 </style>
 
 <div class="inner-banner">
@@ -166,7 +195,7 @@
                 <div class="tab" onclick="showTab('gravy_bowls')">Gravy Bowls</div>
             </div>
             <div class="tab-content active" id="tandoor">
-                <div class="menu-container">
+                <div class="menu_img menu-container">
                     <div class="menu-items">
                         <ul class="menu-list">
                             <li class="menu-item">
@@ -204,11 +233,11 @@
                 </div>
             </div>
             <div class="tab-content" id="asian">
-                <div class="menu-container">
+                <div class="menu_img menu-container">
                     <div class="menu-items">
                         <ul class="menu-list">
                             <li class="menu-item">
-                                <h4>STEAMED MOMOS VEGETABLE<span class="price">325</span></h4>
+                                <h4>STEAMED MOMOS VEGETABLE<span class="price"></span></h4>
                                 <p>Asian vegetables filling steamed memos served with momo sauce.</p>
                             </li>
                             <li class="menu-item">
@@ -243,7 +272,7 @@
                 </div>
             </div>
             <div class="tab-content" id="tamil_nadu">
-                <div class="menu-container">
+                <div class="menu_img menu-container">
                     <div class="menu-items">
                         <ul class="menu-list">
                             <li class="menu-item">
@@ -282,7 +311,7 @@
                 </div>
             </div>
             <div class="tab-content" id="american">
-                <div class="menu-container">
+                <div class="menu_img menu-container">
                     <div class="menu-items">
                         <ul class="menu-list">
                             <li class="menu-item">
@@ -310,7 +339,7 @@
                 </div>
             </div>
             <div class="tab-content" id="platers">
-                <div class="menu-container">
+                <div class="menu_img menu-container">
                     <div class="menu-items">
                         <ul class="menu-list">
                             <li class="menu-item">
@@ -326,7 +355,7 @@
                 </div>
             </div>
             <div class="tab-content" id="rice_bowls">
-                <div class="menu-container">
+                <div class="menu_img menu-container">
                     <div class="menu-items">
                         <ul class="menu-list">
                             <li class="menu-item">
@@ -349,7 +378,7 @@
                 </div>
             </div>
             <div class="tab-content" id="gravy_bowls">
-                <div class="menu-container">
+                <div class="menu_img menu-container">
                     <div class="menu-items">
                         <ul class="menu-list">
                             <li class="menu-item">

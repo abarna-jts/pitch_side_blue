@@ -93,3 +93,10 @@
     });
 </script>
 
+<script>
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+    const navMenu = document.querySelector('.navbar-nav');
+    navMenu.classList.toggle('active');
+});
+</script>
+
