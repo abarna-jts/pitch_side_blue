@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="shortcut icon" href="assets/img/logo-shortcut.png">
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
@@ -140,7 +141,7 @@
         top: 0;
         height: 100%;
         width: 100%;
-        background-color: rgb(94 110 141 / 0%);
+        background-color: rgb(0 0 0 / 0%);
         opacity: 0;
         visibility: hidden;
         -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
@@ -167,8 +168,8 @@
             margin-left: auto;
             margin-right: auto;
             position:relative;
-        padding: 40px;
-        color: #fff;
+            padding: 40px;
+            color: #fff;
         }
 
         .form-container .form {

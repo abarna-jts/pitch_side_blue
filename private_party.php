@@ -50,7 +50,7 @@
 }
 
 .highlight {
-    color: #d9534f;
+    color: #e30016;
     font-weight: bold;
 }
 
@@ -70,7 +70,7 @@
     font-size: 20px;
     position: absolute;
     left: 0;
-    top: 0;
+    top: -4px;
 }
 .features{
     margin-bottom: 23px;
@@ -96,7 +96,7 @@
     display: block;
     width: 50%; /* Half the width of the title */
     height: 2px; /* Thickness of the underline */
-    background-color: #e30016; /* Adjust color as needed */
+    background-color: #c4a747; /* Adjust color as needed */
     position: absolute;
     left: 0%; /* Centers the underline */
     bottom: -5px; /* Adjusts spacing below text */
@@ -151,6 +151,9 @@
     .content-wrapper {
         
         margin: 20px 0px 30px 0px;
+    }
+    .right_img{
+        flex-direction: column-reverse;
     }
 }
 

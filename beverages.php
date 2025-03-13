@@ -50,7 +50,7 @@
         border-left-width: 1px;
         border-bottom-width: 1px;
         color: #ffffff;
-        border-color: #e30016;
+        border-color: #c4a747;
         background-color: #e30016;
         padding-top: 13px;
         padding-right: 24px;

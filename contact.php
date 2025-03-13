@@ -59,7 +59,7 @@
 }
 
 .contact-info-content h4 {
-    color: #e30016;
+    color: #0e8fbf;
     font-size: 1.4em;
     font-weight: normal;
     margin-bottom: 5px;
@@ -137,7 +137,7 @@
   cursor: pointer;
   padding: 10px;
   font-size: 18px;
-  border: 1px solid #e30016;
+  border: 1px solid #c4a747;
   transition: 0.5s;
   font-family: 'lato';
 }
@@ -173,6 +173,47 @@
     font-size: 1.5em;
     margin-bottom: 10px;
     color: #fff;
+}
+}
+
+@media(max-width:350px){
+    .contact-info-icon i {
+        font-size: 25px;
+        color: #e30016;
+        line-height: 52px;
+    }
+    .home_icon {
+        width: 246px !important;
+    }
+    .contact-info-icon {
+        height: 55px;
+        width: 55px;
+    }
+    .section-header {
+    margin-bottom: 0px;
+    text-align: center;
+}
+.contact-info-content h4 {
+    color: #e30016;
+    font-size: 1.19em;
+}
+.contact-info-content p {
+    color: #FFF;
+    font-size: 15px;
+    text-align: justify;
+}
+.contact-form h2 {
+        font-weight: normal;
+        font-size: 1.3em;
+        margin-bottom: 10px;
+        color: #fff;
+    } 
+    .contact-form .input-box input[type="submit"] {
+    padding: 7px;
+    font-size: 16px;
+}
+footer {
+    padding: 0px 0 20px 0px;
 }
 }
 </style>

@@ -70,7 +70,7 @@
     font-size: 20px;
     position: absolute;
     left: 0;
-    top: 0;
+    top: -4px;
 }
 .features{
     margin-bottom: 23px;
@@ -96,7 +96,7 @@
     display: block;
     width: 50%; /* Half the width of the title */
     height: 2px; /* Thickness of the underline */
-    background-color: #e30016; /* Adjust color as needed */
+    background-color: #c4a747; /* Adjust color as needed */
     position: absolute;
     left: 0%; /* Centers the underline */
     bottom: -5px; /* Adjusts spacing below text */
@@ -143,10 +143,10 @@
     .features li::before {
         content: "✦";
         color: #e30016;
-        font-size: 16px;
+        font-size: 20px;
         position: absolute;
         left: 0;
-        top: -2px;
+        top: -4px;
     }
     .content-wrapper {
         
@@ -154,6 +154,18 @@
     }
     .inner-banner{
         font-size: 1.8rem !important;
+    }
+    .right_img{
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width:350px){
+    .inner-banner {
+        font-size: 1.4rem !important;
+    }
+    .right_img{
+        flex-direction: column-reverse;
     }
 }
 

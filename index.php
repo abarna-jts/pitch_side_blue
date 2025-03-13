@@ -98,7 +98,6 @@
                 <div class="item"><img src="assets/img/celebration/celebration_1.jpg" alt="Menu 1"></div>
                 <div class="item"><img src="assets/img/celebration/celebration_2.jpg" alt="Menu 2"></div>
                 <div class="item"><img src="assets/img/celebration/celebration_3.jpg" alt="Menu 3"></div>
-
                 <div class="item"><img src="assets/img/celebration/celebration_4.jpg" alt="Menu 5"></div>
                 <div class="item"><img src="assets/img/celebration/celebration_5.jpg" alt="Menu 6"></div>
                 <div class="item"><img src="assets/img/celebration/celebration_6.jpg" alt="Menu 7"></div>
@@ -112,6 +111,28 @@
 
     </section>
     <!-- Celebration section start -->
+
+
+    <!-- dj section start -->
+    <section class="animated-section">
+        <div class="container-fluid">
+            <div class="row">
+                <video src="assets/img/dg-1.mp4" style="width: 100%; height: 600px; object-fit: cover;" autoplay muted loop></video>
+                <div class="left-img">
+                    <img src="assets/img/right-img.png" alt="">
+                </div>
+                <div class="center-content">
+                    <span class="left-text">Music</span>
+                    <img src="assets/img/center_img.png" class="center-image" alt="Center Image">
+                    <img src="assets/img/over_img.png" class="over-image" alt="">
+                    <span class="right-text">Night</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- dj section end -->
+
 
     <!-- sports section start -->
     <section class="section_padding sports">
@@ -143,6 +164,8 @@
 
     <!-- testimonial section start -->
     <section class="section_padding testimonial">
+        <div class="slider-img"><img src="assets/img/slider-1.png" alt=""></div>
+        <div class="slider-img2"><img src="assets/img/slider-2.png" alt=""></div>
         <div class="container">
             <div class="row">
                 <div class="testimonial_section">
@@ -198,9 +221,10 @@
                 </div>
             </div>
         </div>
+        
     </section>
 
-    <!-- testimonial section start -->
+    <!-- testimonial section end -->
 
 
     <!-- offer section start -->
@@ -489,5 +513,18 @@ $(document).ready(function($) {
         });
     });
 </script>
+
+<script>
+    document.addEventListener('scroll', function() {
+        const section = document.querySelector('.animated-section');
+        const sectionPosition = section.getBoundingClientRect().top;
+        const screenHeight = window.innerHeight;
+
+        if (sectionPosition < screenHeight * 0.75) {
+            section.classList.add('active'); // Trigger animation
+        }
+    });
+</script>
+
 
 </html>

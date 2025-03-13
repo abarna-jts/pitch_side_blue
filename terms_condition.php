@@ -27,7 +27,7 @@
 
 <div class="inner-banner">
         <span>T</span>erms  & <span> C</span>ondition
-        <img src="assets/img/banner/inner-banner.png" alt="Banner Image">
+        <img src="assets/img/banner/abt-banner.png" alt="Banner Image">
     </div>
 
     <!-- Privacy Policy Banner -->
