@@ -29,7 +29,7 @@
 
     <!-- offer section start -->
 
-    <section class="section_padding offer">
+    <section class="section_padding offer abt-sec">
         <div class="container">
             <div class="row">
                 <div class="title-card" style="margin-bottom: 20px;">

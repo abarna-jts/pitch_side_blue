@@ -99,4 +99,47 @@
     navMenu.classList.toggle('active');
 });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const formData = new FormData(this);
+
+            fetch('book_table_mail.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(result => {
+                if (result.status === 'success') {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Thank you for your booking!',
+                        text: 'We will contact you later.',
+                        confirmButtonText: 'Close'
+                    });
+                } else {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Booking Failed',
+                        text: result.message || 'Something went wrong. Please try again later.',
+                        confirmButtonText: 'Close'
+                    });
+                }
+            })
+            .catch(error => {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: 'Failed to submit the form. Please try again.',
+                    confirmButtonText: 'Close'
+                });
+            });
+        });
+
+        document.getElementById('btnCloseForm').addEventListener('click', function () {
+            document.querySelector('.form-popup-bg').style.display = 'none';
+        });
+    </script>
 

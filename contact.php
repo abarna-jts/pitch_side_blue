@@ -59,7 +59,7 @@
 }
 
 .contact-info-content h4 {
-    color: #0e8fbf;
+    color: #e30016;
     font-size: 1.4em;
     font-weight: normal;
     margin-bottom: 5px;
@@ -137,7 +137,7 @@
   cursor: pointer;
   padding: 10px;
   font-size: 18px;
-  border: 1px solid #c4a747;
+  border: 1px solid #e30016;
   transition: 0.5s;
   font-family: 'lato';
 }
@@ -148,7 +148,7 @@
 }
 .contact-form .input-box input[type="submit"]:hover
 {
-  background: #FFF;
+  background: transparent;
   color: #e30016;
 }
 
@@ -164,7 +164,7 @@
   }
 }
 
-@media (max-width:768px){
+@media (max-width:700px){
   .home_icon{
     width: 250px !important;
   }
@@ -216,6 +216,22 @@ footer {
     padding: 0px 0 20px 0px;
 }
 }
+
+@media (min-width:768px) and (max-width:1024px){
+    .home_icon {
+        width: 124px !important;
+    }
+    .section-header {
+      margin-bottom: 5px;
+    }
+    .contact-info {
+        margin-bottom: 25px;
+        width: 100%;
+    }
+    .contact-form h2 {
+        font-size: 1.5em;
+    }
+}
 </style>
 
 <div class="inner-banner">
@@ -265,26 +281,26 @@ footer {
             </div>
 
             <div class="contact-form">
-                <form action="contact_mail.php" method="POST">
+                <form action="contact_mail.php" method="POST" id="contactForm" >
                     <h2>Send Message</h2>
                     <div class="input-box">
-                        <input type="text" class="form_input" name="name" required>
-                        <span>Full Name</span>
+                        <input type="text" class="form_input" name="name" placeholder="Full Name" required>
+                        <!-- <span>Full Name</span> -->
                     </div>
 
                     <div class="input-box">
-                        <input type="email" class="form_input" name="email" required>
-                        <span>Email</span>
+                        <input type="email" class="form_input" name="email" placeholder="Email" required>
+                        <!-- <span>Email</span> -->
                     </div>
 
                     <div class="input-box">
-                        <input type="phone" class="form_input" name="phone" required>
-                        <span>Phone</span>
+                        <input type="phone" class="form_input" name="phone" placeholder="Phone" required>
+                        <!-- <span>Phone</span> -->
                     </div>
 
                     <div class="input-box">
-                        <textarea name="message" class="form_input" required></textarea>
-                        <span>Type your Message...</span>
+                        <textarea name="message" class="form_input" placeholder="Type your Message..." required></textarea>
+                        <!-- <span>Type your Message...</span> -->
                     </div>
 
                     <div class="input-box">
@@ -296,4 +312,38 @@ footer {
     </div>
 </section>
 
+
 <?php include("footer.php"); ?>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const formData = new FormData(this);
+
+            fetch('contact_mail.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(result => {
+                if (result.trim() === 'success') {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Thank you for your Information!',
+                        text: 'We will contact you later.',
+                        confirmButtonText: 'Close'
+                    });
+                } else {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Error',
+                        text: 'Failed to send your message. Please try again.',
+                        confirmButtonText: 'Close'
+                    });
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    </script>

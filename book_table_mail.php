@@ -11,14 +11,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
     $email = $_POST["email"];
     $phone = $_POST["phone"];
-    $message = $_POST["message"];
+    $date = $_POST["date"];
    
     $to = "abarnadevi.jorimts@gmail.com"; 
     $subject = "Table Booking form from $name";
     $body = "Name: $name\n <br>";
     $body.= "Email: $email\n<br>";
     $body.= "Contact: $phone\n<br>";
-    $body.= "Message: $message\n<br>";
+    $body.= "Booking Date: $date\n<br>";
 
     $mail = new PHPMailer(true);
 
@@ -37,7 +37,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Subject = $subject;
         $mail->Body = $body;
         $mail->send();
-        echo 'success';
+
+        echo json_encode(["status" => "success"]);
     } catch (Exception $e) {
         echo 'Error sending email: ' . $e->getMessage();
     }

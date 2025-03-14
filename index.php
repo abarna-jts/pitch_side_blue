@@ -341,7 +341,7 @@
         <div class="form-container">
             <button id="btnCloseForm" class="close-button">X</button>
             <h1>Book a Table</h1>
-            <form action="book_table_mail.php" method="post">
+            <form action="book_table_mail.php" method="post" id="bookingForm">
                 <div class="form-group">
                     <label for="">Name</label>
                     <input type="text" class="form-control" name="name" required/>

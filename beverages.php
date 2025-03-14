@@ -50,7 +50,7 @@
         border-left-width: 1px;
         border-bottom-width: 1px;
         color: #ffffff;
-        border-color: #c4a747;
+        border-color: #e30016;
         background-color: #e30016;
         padding-top: 13px;
         padding-right: 24px;
@@ -148,7 +148,7 @@
         border-radius: 8px;
     }
 
-    @media(max-width:768px){
+    @media(max-width:700px){
         .tabs {
         display: block;
         }
@@ -174,7 +174,63 @@
         .menu-item h4 {
             font-size: 16px;
         }
+        .tabs {
+            
+            display: grid;
+            gap: 10px; /* Space between tabs */
+            grid-template-columns: repeat(2, 1fr); /* Two tabs per row */
+        }
     }
+    @media(max-width:360px){
+        .tab {
+            padding-left: 11px;
+            padding-right:11px;
+            font-size: 0.7rem;
+        }
+        .tab.active, .tab:hover {
+            padding-left: 11px;
+            padding-right:11px;
+            padding-top: 11px;
+            padding-bottom:11px;
+            font-size: 0.7rem;
+        }
+        
+    }
+
+    @media (max-width:1024px) and (min-width:768px){
+        .tabs {
+            display: flex;
+            gap: 5px;
+        }
+        .tab {
+            display: flex;
+            font-size: 0.7rem;
+            padding-top: 13px;
+            padding-right: 17px;
+            padding-bottom: 13px;
+            padding-left: 17px;
+            align-items: center;
+        }
+        .tab.active, .tab:hover {
+            display: flex;
+            font-size: 0.7rem;
+            padding-top: 13px;
+            padding-right: 17px;
+            padding-bottom: 13px;
+            padding-left: 17px;
+            align-items: center;
+        }
+        .menu-container {
+            width: 100% !important;
+            gap: 20px !important;
+        }
+        .menu-item {
+            margin-bottom: 0px;
+        }
+        
+    }
+
+
 </style>
 
 <div class="inner-banner">
